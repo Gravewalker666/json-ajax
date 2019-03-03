@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container" id="content"></div>
+
+</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+<script type="text/html" id="temp">
+    <div class="row">
+        <div class="col-md-4">{{name}}</div>
+        <div class="col-md-4">{{age}}</div>
+        <div class="col-md-4">{{band}}</div>
+    </div>
+</script>
+<script>
+    let persons = {
+        "name": "heshan",
+        "age": 13,
+        "band": "Cob",
+    }
+    $(function () {
+        let content = Mustache.render($("#temp").html(),persons)
+        $("#content").append(content)
+        console.log(persons)
+    })
+</script>
+</html>
