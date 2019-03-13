@@ -1,13 +1,19 @@
-[{
-  "name": "heshan",
-  "age": 13,
-  "band": "Cob"
-}, {
-  "name": "alexi",
-  "age": 12,
-  "band": "arch enemy"
-}, {
-  "name": "laiho",
-  "age": 14,
-  "band": "amon"
-}]
+{
+  "people": [
+    {
+      "name": "heshan",
+      "age": 13,
+      "band": "Cob"
+    },
+    {
+      "name": "alexi",
+      "age": 12,
+      "band": "arch enemy"
+    },
+    {
+      "name": "laiho",
+      "age": 14,
+      "band": "amon"
+    }
+  ]
+}
